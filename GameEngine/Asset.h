@@ -4,7 +4,9 @@
 
 #include "Object.h"
 class Asset: public Object
-{};
+{
+	friend class AssetManager;
+};
 
 #endif
 

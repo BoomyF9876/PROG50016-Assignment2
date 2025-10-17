@@ -13,15 +13,15 @@ private:
 protected:
 	Object() = default;
 	~Object() = default;
-
-public:
 	void Initialize();
 	void Destroy();
-	
+	void Load(json::JSON _json);
+
+public:
 	bool IsInitialized() { return initialized; };
 	std::string& GetName() { return name; };
 	int GetId() { return id; };
-	void Load(json::JSON _json);
+
 };
 
 #endif

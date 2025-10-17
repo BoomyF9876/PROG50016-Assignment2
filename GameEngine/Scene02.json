@@ -1,0 +1,25 @@
+{
+  "AssetManager": [],
+  "SceneManager": {
+    "scenes": [
+      {
+        "name": "Scene #2",
+        "id": 1,
+        "Entities": [
+          {
+            "name": "Entity 02",
+            "id": 1,
+            "position": { "x": 640, "y": 360},
+            "Components": [
+              {
+                "componentType": "Sprite",
+                "id": 1,
+                "spriteName": "Tacos.jpg"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

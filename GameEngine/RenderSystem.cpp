@@ -40,20 +40,16 @@ void RenderSystem::Update()
 void RenderSystem::Load(json::JSON _json)
 {
 	DEBUG_LOG(4, "RenderSystem::Load");
-	if (_json.hasKey("RenderSystem"))
-	{
-		json::JSON renderSys = Get(_json, "RenderSystem");
 
-		name = renderSys["name"].ToString();
-		width = renderSys["width"].ToInt();
-		height = renderSys["height"].ToInt();
-		fullscreen = renderSys["fullScreen"].ToBool();
+	name = Get(_json, "name").ToString();
+	width = Get(_json, "width").ToInt();
+	height = Get(_json, "height").ToInt();
+	fullscreen = Get(_json, "fullScreen").ToBool();
 
-		DEBUG_LOG(8, "name :" + name);
-		DEBUG_LOG(8, "width :" + std::to_string(width));
-		DEBUG_LOG(8, "height :" + std::to_string(height));
-		DEBUG_LOG(8, "fullScreen :" + std::to_string(fullscreen));
-	}
+	DEBUG_LOG(8, "name :" + name);
+	DEBUG_LOG(8, "width :" + std::to_string(width));
+	DEBUG_LOG(8, "height :" + std::to_string(height));
+	DEBUG_LOG(8, "fullScreen :" + std::to_string(fullscreen));
 }
 
 void RenderSystem::AddRenderable(IRenderable* _renderable)

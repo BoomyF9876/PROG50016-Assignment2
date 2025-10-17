@@ -3,17 +3,16 @@
 #define _COMPONENT_H_
 
 #include "Object.h"
-class Component: public Object
+class Component : public Object
 {
 protected:
-	Component() = default;
-	~Component() = default;
-
-public:
+	Entity* owner;
 	virtual void Initialize();
-	virtual void Destroy();
 	virtual void Update();
+	virtual void Destroy();
 	virtual void Load(json::JSON _json);
+private:
+	friend class Entity;
 };
 
 #endif

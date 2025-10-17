@@ -14,18 +14,14 @@ private:
 	std::string spriteName;
 	SDL_Texture* texture;
 	SDL_Point size;
+	SDL_Texture* subTexture;
 
 protected:
-	void Render() override;
-
-public:
-	Sprite() = default;
-	~Sprite() = default;
-
 	void Initialize() override;
-	void Destroy() override;
 	void Update() override;
+	void Destroy() override;
 	void Load(json::JSON _json) override;
+	void Render() override;
 };
 
 #endif

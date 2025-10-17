@@ -11,6 +11,8 @@
 #include <list>
 #include <cassert>
 #include "json.hpp"
+#include "SDL.h"
+#include "SDL_image.h"
 
 #define DEBUG_LOG(indent, log) std::cout << std::setw(indent) << "" << log << std::endl;
 

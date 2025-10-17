@@ -2,10 +2,6 @@
 #ifndef _ENGINE_H_
 #define _ENGINE_H_
 
-#include "AssetManager.h"
-#include "SceneManager.h"
-#include "RenderSystem.h"
-#include "EngineTime.h"
 class Engine
 {
 public:
@@ -18,16 +14,13 @@ public:
 		return *instance;
 	}
 
-	void GetInput();
 	void Initialize();
 	void Destroy();
 	void GameLoop();
-private:
-	bool quit = false;
-	static Engine* instance;
-	AssetManager* assetManager;
-	SceneManager* sceneManager;
 
+	//void GetInput();
+private:
+	static Engine* instance;
 	inline explicit Engine() = default;
 	inline ~Engine() = default;
 	inline explicit Engine(Engine const&) = delete;

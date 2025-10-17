@@ -3,3 +3,4 @@
 Debug/*
 GameEngine/Debug/*
 GameEngine/x64/Debug/*
+!GameEngine/External-Libs/**/

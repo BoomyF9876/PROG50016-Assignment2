@@ -277,7 +277,7 @@ namespace json {
 			return Internal.List->at(index);
 		}
 
-		int length() const {
+		size_t length() const {
 			if (Type == Class::Array)
 				return Internal.List->size();
 			else
@@ -290,7 +290,7 @@ namespace json {
 			return false;
 		}
 
-		int size() const {
+		size_t size() const {
 			if (Type == Class::Object)
 				return Internal.Map->size();
 			else if (Type == Class::Array)

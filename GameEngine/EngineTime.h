@@ -6,6 +6,15 @@
 
 class Time
 {
+private:
+	static Time* instance;
+	int frameCount = 0;
+	std::chrono::duration<float> deltaTime{};
+	std::chrono::time_point<std::chrono::system_clock> beginTime{};
+	std::chrono::time_point<std::chrono::system_clock> endTime{};
+	std::chrono::duration<float> totalTime{};
+	friend class Engine;
+
 public:
 	inline static Time& Instance()
 	{
@@ -21,14 +30,6 @@ public:
 	int FrameCount() { return frameCount; };
 
 private:
-	static Time* instance;
-	int frameCount;
-	std::chrono::duration<float> deltaTime;
-	std::chrono::time_point<std::chrono::system_clock> beginTime;
-	std::chrono::time_point<std::chrono::system_clock> endTime;
-	std::chrono::duration<float> totalTime;
-	friend class Engine;
-
 	void Initialize();
 	void Update();
 	void Destroy();
