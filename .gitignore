@@ -1,0 +1,5 @@
+.vs/*
+.vscode/*
+Debug/*
+GameEngine/Debug/*
+GameEngine/x64/Debug/*

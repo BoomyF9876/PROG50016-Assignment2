@@ -1,0 +1,9 @@
+{
+	"RenderSystem" : {
+	  "name" : "Main Window",
+	  "width" : 1920,
+	  "height" : 1080,
+	  "fullScreen" : false
+	},
+	"DefaultScene" : "TestScene.json"
+}

@@ -1,0 +1,49 @@
+{
+  "AssetManager": [],
+  "SceneManager": {
+    "scenes": [
+      {
+        "name": "Scene #1",
+        "id": 1,
+        "Entites": [
+          {
+            "name": "Zombie #1",
+            "id": 1,
+            "Components": [
+              {
+                "componentType": "Sprite",
+                "name": "Zombie #1 Sprite #1",
+                "id": 1,
+                "spriteName": "Zombie SpriteReference"
+              },
+              {
+                "componentType": "Sprite",
+                "name": "Zombie #1 Sprite #2",
+                "id": 1,
+                "spriteName": "Zombie Sprite Reference"
+              }
+            ]
+          },
+          {
+            "name": "Zombie #2",
+            "id": 1,
+            "Components": [
+              {
+                "componentType": "Sprite",
+                "name": "Zombie #2 Sprite #1",
+                "id": 1,
+                "spriteName": "Zombie SpriteReference"
+              },
+              {
+                "componentType": "Sprite",
+                "name": "Zombie #2 Sprite #2",
+                "id": 1,
+                "spriteName": "Zombie Sprite Reference"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
